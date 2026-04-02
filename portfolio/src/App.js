@@ -1,12 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Home from './pages/homepage/Home'
-
+import Navbar from './components/Navbar/Navbar';
 
 
 function App() {
   return (
-  <Home></Home>
+    <div className='main'>
+      <title>portfolio</title>
+      <Navbar></Navbar>
+      <Home></Home>
+    </div>
+  
   );
 }
 

@@ -5,9 +5,10 @@ import "./Home.css"
 
 function Home() {
     return(
-        <h1>
+        <div>
             hello
-        </h1>
+        </div>
+        
     )
 }
 
