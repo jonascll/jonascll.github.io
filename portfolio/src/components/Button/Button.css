@@ -1,0 +1,22 @@
+button{
+      background-color: rgb(54, 54, 64);
+     color: rgb(207, 241, 241);
+     border: 0px solid #000;
+     border-radius: 7px;
+   
+}
+
+button:hover{
+     background-color: rgb(72, 72, 86);
+}
+
+button:active{
+     background-color: rgb(48, 48, 57);
+    
+}
+
+.buttonContainer{
+     display: flex;
+     justify-content: center;
+  
+}

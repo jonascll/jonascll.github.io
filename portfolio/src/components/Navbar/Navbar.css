@@ -1,22 +1,16 @@
 .navbar{
     height: 50px;
     width: 100%;
-    background-color: rgb(53, 53, 65);
+    background-color: rgb(54, 54, 64);
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     gap: 10px;
-}
-.currentSelected {
-  color: rgb(207, 241, 241)!important;
-}
-.firstItem{
-    margin-left: 10px;
+    border-bottom: 1px solid rgb(24, 24, 29);
 }
 
 
-.navbarItem{
-    cursor: pointer;
-    color: rgb(106, 126, 126)
+span{
+  color: rgb(207, 241, 241)
 }

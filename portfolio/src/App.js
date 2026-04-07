@@ -6,6 +6,8 @@ import Navbar from './components/Navbar/Navbar';
 import "./fonts/MADE TOMMY Regular.otf"
 import Router from "./router/Router"
 
+
+
 function App() {
   const [selectedRoute, setRoute] = useState({"route" : "Home"}) 
   
@@ -14,8 +16,8 @@ function App() {
   return (
     <div className='main'>
       <title>portfolio</title>
-      <Navbar onPageChange={(page) => {setRoute({"route" : page})}} items={["Home", "Projects", "About"]}/>
-      <Router selectedRoute={selectedRoute.route}/>
+      <Navbar onPageChange={(page) => {setRoute({"route" : page})}} selectedRoute={selectedRoute.route} items={["Home", "Projects", "About"]}/>
+      <Router onPageChange={(page) => {setRoute({"route": page})}} selectedRoute={selectedRoute.route}/>
     </div>
   
   );

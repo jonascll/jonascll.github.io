@@ -1,23 +1,27 @@
 
 import Home from "../pages/homepage/Home"
+import Projects from "../pages/projects/Projects"
+import About from "../pages/about/About"
 
-function Router({selectedRoute}) {
+function Router({selectedRoute, onPageChange}) {
 
     console.log(selectedRoute)
     switch(selectedRoute) {
         case "Home" : 
-        return(<Home></Home>)
+        return(<Home pageChange={(page) => onPageChange(page)}/>)
         
         case "Projects" :
-            return(/*<Projects></Projects>*/ <span>Projects</span>)
+            return(<Projects/>)
             
             case "About":
-                return(/*<About/>*/<span>About</span>)
+                return(<About/>)
                 
                 default:
-                    return(<Home></Home>)
+                    return(<Home pageChange={(page) => onPageChange(page)}/>)
                    
     }
 }
+
+
 
 export default Router
