@@ -1,20 +1,22 @@
 .navbar{
-    height: 70px;
+    height: 50px;
     width: 100%;
     background-color: rgb(53, 53, 65);
-   
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.currentSelected {
+  color: rgb(207, 241, 241)!important;
+}
+.firstItem{
+    margin-left: 10px;
 }
 
-.hamburgerIcon {
-    height: 25px;
-    width: 25px;
-    margin-left: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(72, 72, 90);
-    box-shadow: 3px 3px 5px 0px rgb(37, 37, 46);
+
+.navbarItem{
+    cursor: pointer;
+    color: rgb(106, 126, 126)
 }

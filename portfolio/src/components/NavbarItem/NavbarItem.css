@@ -1,0 +1,12 @@
+.currentSelected {
+  color: rgb(207, 241, 241)!important;
+}
+.firstItem{
+    margin-left: 10px;
+}
+
+
+.navbarItem{
+    cursor: pointer;
+    color: rgb(106, 126, 126)
+}

@@ -1,6 +1,16 @@
 .main{
   height: 50px;
   width: 100%;
+  font-family: MADE TOMMY;
+  
 }
 
 
+@font-face {
+  font-family: "MADE TOMMY";
+  src: local("MADE TOMMY"), url("./fonts/MADE\ TOMMY\ Regular.otf") format("opentype");
+}
+
+span{
+  color: rgb(207, 241, 241)
+}
