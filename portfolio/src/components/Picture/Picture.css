@@ -1,0 +1,13 @@
+.squareImage {
+    object-fit:cover;
+}
+
+.circleImage{
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+.hoverable{
+        cursor: pointer;
+}
+

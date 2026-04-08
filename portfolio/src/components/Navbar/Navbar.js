@@ -8,6 +8,7 @@ function Navbar({ items, onPageChange, selectedRoute = "Home"}) {
        
         onPageChange(page)
     }
+    
     return (
         <div>
             <div className="navbar">

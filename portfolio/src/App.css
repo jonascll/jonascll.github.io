@@ -21,6 +21,6 @@ body{
 
 
 
-h1, span{
+h1, h2, h3,span, i{
   color: rgb(207, 241, 241)
 }
