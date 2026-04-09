@@ -10,7 +10,7 @@ import Socials from "../../components/Socials/Socials"
 
 function Home({pageChange}) {
     return(
-        <div>
+        <div className="homePage">
             <div className="homeContainer">
                 <h1>Jonas Collin</h1>
                 <Picture circleShape={true} width={150} height={150} alt={"Me"} source={pfp}></Picture>
@@ -24,7 +24,6 @@ function Home({pageChange}) {
                     <a href={resume} download={"resume.pdf"}>
                         <Button width={170} height={40} text={"Download my resume"}/>
                     </a>
-                
             </div>
             <div className="socialsContainer">
                 <Socials githubLink="https://github.com/jonascll"></Socials>

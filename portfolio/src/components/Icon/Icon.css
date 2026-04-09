@@ -1,0 +1,50 @@
+/* Icon.css */
+.icon-wrapper {
+    position: relative;
+    vertical-align: middle;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.hoverable {
+    cursor: pointer;
+}
+
+.icon-wrapper.masked {
+    background-color: var(--icon-color);
+    -webkit-mask-image: var(--icon-url);
+    mask-image: var(--icon-url);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+
+.icon-wrapper.masked.reveal-on-hover:hover {
+   
+    background-color: transparent !important;
+    
+    
+    -webkit-mask-image: var(--hover-url) !important;
+    mask-image: var(--hover-url) !important;
+}
+
+.icon-wrapper.masked img {
+    visibility: hidden;
+}
+
+
+.icon-wrapper.masked.reveal-on-hover:hover {
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+    background-color: transparent !important;
+}
+
+.icon-wrapper.masked.reveal-on-hover:hover img {
+    visibility: visible;
+}
