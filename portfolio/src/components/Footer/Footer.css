@@ -1,0 +1,56 @@
+.footerMain{
+    display: flex;
+    background-color: #363640;
+    height: 200px;
+    border-top: 1px solid black;
+    width: 100%;
+    justify-content: space-evenly;
+   
+}
+
+
+.contactIconContainer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contactItem{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.contactHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.socialsSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.socialsHeader{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.contactMeMainContainer{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

@@ -19,4 +19,15 @@
 
 .homePage{
     padding-top: 50px;
+    flex: 1;
+}
+
+.homeMain{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.homeName{
+     font-size: 50px;
 }

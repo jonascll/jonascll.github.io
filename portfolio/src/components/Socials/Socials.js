@@ -5,14 +5,18 @@ import instagram from "../../Resources/instagram.png"
 import linkedIn from "../../Resources/linkedIn.png"
 import facebook from "../../Resources/facebook.png"
 import twitter from "../../Resources/twitter.png"
+import githubColored from "../../Resources/github-colored.png"
+import instagramColored from "../../Resources/instagram-colored.png"
+import linkedInColored from "../../Resources/linkedIn-colored.png"
+import facebookColored from "../../Resources/facebook-colored.png"
 
-function Socials({facebookLink = "", linkedInLink="", instagramLink="", githubLink="", twitterLink=""}) {
+function Socials({facebookLink = "", linkedInLink="", instagramLink="", githubLink="", twitterLink="", iconSize = 40, iconColor="#363640"}) {
 
-    var twitterIcon = (twitterLink === "") ? null : <Icon alt={"twitter"} color={"#363640"} width={40} height={40} source={twitter} onClick={() => {window.open(twitterLink)}}/>
-    var facebookIcon = (facebookLink === "") ? null : <Icon alt={"facebook"} color={"#363640"} width={40} height={40} source={facebook} onClick={() => {window.open(facebookLink)}}/>
-    var linkedInIcon = (linkedInLink === "") ? null : <Icon alt={"linkedIn"} color={"#363640"} width={40} height={40} source={linkedIn} onClick={() => {window.open(linkedInLink)}}/>
-    var instagramIcon = (instagramLink === "") ? null : <Icon alt={"instagram"} color={"#363640"} width={40} height={40} source={instagram} onClick={() => {window.open(instagramLink)}}/>
-    var githubIcon = (githubLink === "") ? null : <Icon alt={"github"} color={"#363640"} width={40} height={40} source={github} onClick={() => {window.open(githubLink)}}/>
+    var twitterIcon = (twitterLink === "") ? null : <Icon alt={"twitter"} color={iconColor} width={iconSize} height={iconSize} source={twitter}  originalColorOnHover={true} onClick={() => {window.open(twitterLink)}}/>
+    var facebookIcon = (facebookLink === "") ? null : <Icon alt={"facebook"} color={iconColor} width={iconSize} height={iconSize} source={facebook} originalColorSource={facebookColored}  originalColorOnHover={true} onClick={() => {window.open(facebookLink)}}/>
+    var linkedInIcon = (linkedInLink === "") ? null : <Icon alt={"linkedIn"} color={iconColor} width={iconSize} height={iconSize} source={linkedIn}  originalColorOnHover={true} originalColorSource={linkedInColored} onClick={() => {window.open(linkedInLink)}}/>
+    var instagramIcon = (instagramLink === "") ? null : <Icon alt={"instagram"} color={iconColor} width={iconSize} height={iconSize} source={instagram} originalColorOnHover={true} originalColorSource={instagramColored} onClick={() => {window.open(instagramLink)}}/>
+    var githubIcon = (githubLink === "") ? null : <Icon alt={"github"} color={iconColor} width={iconSize} height={iconSize} originalColorOnHover={true} originalColorSource={githubColored} source={github} onClick={() => {window.open(githubLink)}}/>
 
     return(<div className="socialsList">
         {githubIcon}
