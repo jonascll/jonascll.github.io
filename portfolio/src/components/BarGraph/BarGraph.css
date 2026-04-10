@@ -1,5 +1,8 @@
 .outerBar{
     display: flex;
+    box-shadow: inset 0 0 10px #000;
+    
+    overflow: hidden;
 }
 
 .barGraphLabel{
@@ -13,4 +16,36 @@ position: absolute;
 
     white-space: nowrap;
     pointer-events: none;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.innerBarHidden{
+   width: 0%;
+  
+}
+
+.innerBarVisible{
+    transition: width 1s ease-in-out;
+   
+  
+}
+
+.innerBarGradient{
+  background: linear-gradient(to bottom,  rgb(207, 241, 241) 0%, rgb(54, 54, 64) 100%);
+}
+
+.glowBase {
+   
+    transition: width 0.1s ease-in-out;
+    background-color: #7ee8fa;
+}
+
+.glowVisible {
+
+    width: 3%;
+}
+
+.glowHidden {
+    width: 0%;
 }
