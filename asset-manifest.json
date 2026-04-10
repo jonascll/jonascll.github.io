@@ -1,20 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c87eb38.css",
-    "main.js": "/static/js/main.e86a77ff.js",
+    "main.css": "/static/css/main.1210d2e8.css",
+    "main.js": "/static/js/main.e7407d3a.js",
     "static/js/453.635f5f07.chunk.js": "/static/js/453.635f5f07.chunk.js",
+    "static/media/aboutPic.jpg": "/static/media/aboutPic.59c6d5838b0d3e8a3dd2.jpg",
+    "static/media/gmail-colored.png": "/static/media/gmail-colored.6ddfff3ba41251ef7e33.png",
     "static/media/pfp.jpg": "/static/media/pfp.cfc1e5548cfbeb8f933e.jpg",
+    "static/media/cpp-colored.png": "/static/media/cpp-colored.b18127529f01bc02f649.png",
     "static/media/MADE TOMMY Regular.otf": "/static/media/MADE TOMMY Regular.101be848d2d18e7296bc.otf",
+    "static/media/instagram-colored.png": "/static/media/instagram-colored.f7b3dff34fba7bf43d83.png",
     "static/media/CV Jonas Collin.pdf": "/static/media/CV Jonas Collin.8408c848d412e1c11887.pdf",
+    "static/media/cpp.png": "/static/media/cpp.28f3d4e7ef95a6735a7d.png",
+    "static/media/cs-colored.png": "/static/media/cs-colored.9bce78737e170b4b7cdf.png",
+    "static/media/gmail.png": "/static/media/gmail.0dedbd5476dc24ea43ac.png",
+    "static/media/cs.png": "/static/media/cs.a0523c86975d676834bc.png",
+    "static/media/js-colored.png": "/static/media/js-colored.32605b0c8e4c1359b1f0.png",
     "static/media/backgroundPattern.png": "/static/media/backgroundPattern.63fbc2b6aa3e8fda3f32.png",
+    "static/media/js.png": "/static/media/js.bcfcba2aa65758f80669.png",
     "static/media/linkedIn.png": "/static/media/linkedIn.032cf8a63be2f0f4d425.png",
     "index.html": "/index.html",
-    "main.3c87eb38.css.map": "/static/css/main.3c87eb38.css.map",
-    "main.e86a77ff.js.map": "/static/js/main.e86a77ff.js.map",
+    "main.1210d2e8.css.map": "/static/css/main.1210d2e8.css.map",
+    "main.e7407d3a.js.map": "/static/js/main.e7407d3a.js.map",
     "453.635f5f07.chunk.js.map": "/static/js/453.635f5f07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c87eb38.css",
-    "static/js/main.e86a77ff.js"
+    "static/css/main.1210d2e8.css",
+    "static/js/main.e7407d3a.js"
   ]
 }
