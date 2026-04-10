@@ -25,15 +25,12 @@ function Home({ pageChange }) {
                         <Button width={170} height={40} text={"Download my resume"} />
                     </a>
                 </div>
-              
+
 
 
 
             </div>
-            <div className="homeFooterContainer">
-                 <Footer/>
-            </div>
-           
+            <Footer />
         </div>
 
 

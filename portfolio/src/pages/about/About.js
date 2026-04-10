@@ -11,9 +11,9 @@ import csColored from "../../Resources/cs-colored.png"
 import js from "../../Resources/js.png"
 import jsColored from "../../Resources/js-colored.png"
 import BarGraph from "../../components/BarGraph/BarGraph"
-
+import unityColored from "../../Resources/unity-colored.png"
 import Footer from "../../components/Footer/Footer"
-
+import unrealColored from "../../Resources/unreal-colored.png"
 
 //import { GetSizeLetter,useWindowDimensions } from "../../utils/utils"
 
@@ -43,26 +43,26 @@ function About() {
                 <div className="skillsetContainer">
                     <div className="iconRow">
                         <div className="icon">
-                            <Icon source={cs} originalColorSource={csColored} originalColorOnHover={true} color={"#363640"}></Icon>
+                            <Icon alt="C#" source={cs} originalColorSource={csColored} originalColorOnHover={true} color={"#363640"}></Icon>
                             <BarGraph insideColor={"rgb(207, 241, 241)"} insideColorSecond={"rgb(54, 54, 64)"} useGradient={true} borderColor={"#363640"} progress={75} width={150} height={30} borderThickness={3} label="Proficient" labelColor={"rgb(207, 241, 241)"} borderRadius={15}></BarGraph>
                         </div>
                         <div className="icon">
-                            <Icon source={unity} originalColorSource={unity} originalColorOnHover={true} color={"#363640"}></Icon>
+                            <Icon alt="Unity" source={unity} originalColorSource={unityColored} originalColorOnHover={true} color={"#363640"}></Icon>
                             <BarGraph insideColor={"rgb(207, 241, 241)"} insideColorSecond={"rgb(54, 54, 64)"} useGradient={true} borderColor={"#363640"} progress={75} width={150} height={30} borderThickness={3} label="Proficient" labelColor={"rgb(207, 241, 241)"} borderRadius={15}></BarGraph>
                         </div>
                         <div className="icon">
-                            <Icon source={unreal} originalColorSource={unreal} originalColorOnHover={true} color={"#363640"}></Icon>
+                            <Icon alt="Unreal Engine" source={unreal} originalColorSource={unrealColored} originalColorOnHover={true} color={"#363640"}></Icon>
                             <BarGraph insideColor={"rgb(207, 241, 241)"} insideColorSecond={"rgb(54, 54, 64)"} useGradient={true} borderColor={"#363640"} progress={50} width={150} height={30} borderThickness={3} label="Competent" labelColor={"rgb(207, 241, 241)"} borderRadius={15}></BarGraph>
                         </div>
                     </div>
                     <div className="iconRow">
                         <div className="icon">
-                            <Icon source={js} originalColorSource={jsColored} originalColorOnHover={true} color={"#363640"}></Icon>
+                            <Icon alt="JavaScript" source={js} originalColorSource={jsColored} originalColorOnHover={true} color={"#363640"}></Icon>
                             <BarGraph insideColor={"rgb(207, 241, 241)"} insideColorSecond={"rgb(54, 54, 64)"} useGradient={true} borderColor={"#363640"} progress={50} width={150} height={30} borderThickness={3} label="Competent" labelColor={"rgb(207, 241, 241)"} borderRadius={15}></BarGraph>
                         </div>
 
                         <div className="icon">
-                            <Icon source={cpp} originalColorSource={cppColored} originalColorOnHover={true} color={"#363640"}></Icon>
+                            <Icon alt="C++" source={cpp} originalColorSource={cppColored} originalColorOnHover={true} color={"#363640"}></Icon>
                             <BarGraph insideColor={"rgb(207, 241, 241)"} insideColorSecond={"rgb(54, 54, 64)"} useGradient={true} borderColor={"#363640"} progress={25} width={150} height={30} borderThickness={3} label="Familiar" labelColor={"rgb(207, 241, 241)"} borderRadius={15}></BarGraph>
                         </div>
 
