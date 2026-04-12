@@ -1,6 +1,6 @@
 
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import "./fonts/MADE TOMMY Regular.otf"
@@ -11,7 +11,9 @@ import Router from "./router/Router"
 function App() {
   const [selectedRoute, setRoute] = useState({"route" : "/home"}) 
   
-
+  useEffect(() => {
+    window.history.replaceState({}, "", "/home")
+  }, [])
 
   return (
     <div className='main'>
