@@ -16,7 +16,7 @@ function Router({selectedRoute, onPageChange}) {
         return () => {
             window.removeEventListener('popstate', handleBrowserHistoryChange)
         }
-    }, [])
+    }, [onPageChange])
     switch(selectedRoute) {
         case "/home" : 
         return(<Home pageChange={(page) => onPageChange(page)}/>)
