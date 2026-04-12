@@ -1,0 +1,14 @@
+.projectsMain{
+      display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.projectsPage{
+        padding-top: 50px;
+        flex: 1;
+}
+
+.footerContainerProjects{
+    margin-top: 50px;
+}

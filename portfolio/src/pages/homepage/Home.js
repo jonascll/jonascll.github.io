@@ -30,7 +30,10 @@ function Home({ pageChange }) {
 
 
             </div>
-            <Footer />
+            <div className="footerContainerHome">
+                <Footer />
+            </div>
+            
         </div>
 
 
