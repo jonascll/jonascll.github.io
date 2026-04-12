@@ -8,15 +8,15 @@ function Router({selectedRoute, onPageChange}) {
 
     useEffect(() => {
             const handleBrowserHistoryChange = (event) => {
-                var hashPath = window.location.hash.slice(1)
-                onPageChange(hashPath)
+                
+                onPageChange(window.location.pathname)
             }
             window.addEventListener('popstate', handleBrowserHistoryChange)
             
         return () => {
             window.removeEventListener('popstate', handleBrowserHistoryChange)
         }
-    })
+    }, [])
     switch(selectedRoute) {
         case "/home" : 
         return(<Home pageChange={(page) => onPageChange(page)}/>)

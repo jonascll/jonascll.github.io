@@ -12,14 +12,22 @@ function App() {
   const [selectedRoute, setRoute] = useState({"route" : "/home"}) 
   
   useEffect(() => {
-    window.location.hash = "/home"
-  }, [])
+  const params = new URLSearchParams(window.location.search);
+  const redirect = params.get("redirect");
+
+  if (redirect) {
+   window.history.pushState({}, "", redirect);
+    setRoute({ route: redirect });
+  } else {
+    setRoute({ route: window.location.pathname || "/home" });
+  }
+}, []);
 
   return (
     <div className='main'>
       <title>portfolio</title>
-      <Navbar onPageChange={(page) => {window.location.hash = page; setRoute({"route" : page})}} selectedRoute={selectedRoute.route} items={["Home", "Projects", "About"]}/>
-      <Router onPageChange={(page) => {window.location.hash = page;setRoute({"route": page})}} selectedRoute={selectedRoute.route}/>
+      <Navbar onPageChange={(page) => { window.history.pushState({}, "", page);; setRoute({"route" : page})}} selectedRoute={selectedRoute.route} items={["Home", "Projects", "About"]}/>
+      <Router onPageChange={(page) => {  window.history.pushState({}, "", page);;setRoute({"route": page})}} selectedRoute={selectedRoute.route}/>
     </div>
   
   );
