@@ -7,13 +7,13 @@ function Router({selectedRoute, onPageChange}) {
 
     console.log(selectedRoute)
     switch(selectedRoute) {
-        case "/home" : 
+        case "#/home" : 
         return(<Home pageChange={(page) => onPageChange(page)}/>)
         
-        case "/projects" :
+        case "#/projects" :
             return(<Projects/>)
             
-            case "/about":
+            case "#/about":
                 return(<About/>)
                 
                 default:
