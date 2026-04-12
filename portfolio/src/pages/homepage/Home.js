@@ -19,8 +19,8 @@ function Home({ pageChange }) {
                 </div>
 
                 <div className="buttonContainer">
-                    <Button onClick={() => pageChange("Projects")} width={170} height={40} text={"View my projects"} />
-                    <Button onClick={() => pageChange("About")} width={170} height={40} text={"About me"} />
+                    <Button onClick={() => pageChange("/projects")} width={170} height={40} text={"View my projects"} />
+                    <Button onClick={() => pageChange("/about")} width={170} height={40} text={"About me"} />
                     <a href={resume} download={"resume.pdf"}>
                         <Button width={170} height={40} text={"Download my resume"} />
                     </a>

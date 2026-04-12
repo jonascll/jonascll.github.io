@@ -62,3 +62,4 @@ export function GetSizeLetter({height, width}) {
     }
     return size;
 }
+

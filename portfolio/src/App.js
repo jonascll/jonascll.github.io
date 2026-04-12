@@ -9,15 +9,15 @@ import Router from "./router/Router"
 
 
 function App() {
-  const [selectedRoute, setRoute] = useState({"route" : "Home"}) 
+  const [selectedRoute, setRoute] = useState({"route" : "/home"}) 
   
 
 
   return (
     <div className='main'>
       <title>portfolio</title>
-      <Navbar onPageChange={(page) => {setRoute({"route" : page})}} selectedRoute={selectedRoute.route} items={["Home", "Projects", "About"]}/>
-      <Router onPageChange={(page) => {setRoute({"route": page})}} selectedRoute={selectedRoute.route}/>
+      <Navbar onPageChange={(page) => {window.history.replaceState({},"", page); setRoute({"route" : page})}} selectedRoute={selectedRoute.route} items={["Home", "Projects", "About"]}/>
+      <Router onPageChange={(page) => {window.history.replaceState({},"", page);setRoute({"route": page})}} selectedRoute={selectedRoute.route}/>
     </div>
   
   );
