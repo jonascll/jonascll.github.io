@@ -1,0 +1,26 @@
+
+
+.projectName{
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+.projectMainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.projectDescription{
+    padding-bottom: 15px;
+}
+
+.projectIconContainer{
+    padding-top: 25px;
+}
+
+.projectHidden{
+    display: none;
+}

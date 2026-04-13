@@ -1,5 +1,5 @@
 .projectsMain{
-      display: flex;
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
@@ -11,4 +11,41 @@
 
 .footerContainerProjects{
     margin-top: 50px;
+}
+.projectsName{
+    font-size: 50px;
+}
+
+
+.projectsNameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectItemsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: 15px;
+   
+}
+.projectItem{
+    flex: 0 0 calc(10% ); 
+    display: inline-block;
+    border: 2px solid rgb(207, 241, 241);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.3);
+}
+
+.projectItem:hover{
+   flex: 0 0 calc(50%);
+
+}
+
+.projectItemHidden {
+    display: none;
 }

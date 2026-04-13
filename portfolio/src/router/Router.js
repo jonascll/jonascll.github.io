@@ -28,7 +28,7 @@ function Router({selectedRoute, onPageChange}) {
                 return(<About/>)
                 
                 default:
-                    return(<Home pageChange={(page) => onPageChange(page)}/>)
+                    return(<h1 style={{paddingTop: "50px"}}>Page not found</h1>)
                    
     }
 }

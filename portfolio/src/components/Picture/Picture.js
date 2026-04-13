@@ -26,6 +26,7 @@ function Picture({ source, width = 100, height = 100, alt, circleShape = false, 
                     height={height}
                     alt={alt}
                     style={{ display: "block" }}
+                    onClick={onClick}
                 />
             
 
