@@ -18,7 +18,7 @@ function Project({ title, description, githubLink, index = null, language = null
    
     if(hovered.hovered) {
         if(hovered.index === index) {
-            cardSizeMultiplier = hoveredSizeMultiplier
+           // cardSizeMultiplier = hoveredSizeMultiplier
         } 
         
     }

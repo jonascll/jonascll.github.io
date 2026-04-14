@@ -18,19 +18,25 @@ function Projects() {
         <div className="projectsMain">
             <div className="projectsPage">
                 <div className="projectsNameContainer">
-                    <h1 className="projectsName">Projects</h1>
+                    <h1 className={`projectsName ${hoveredCard.hovered ? "projectsNameHidden" : ""}`}>Projects</h1>
                 </div>
                 <div className="projectItemsContainer">
                     {projects.map((element, index) => {
-                        return <div onMouseOver={() => { setHoveredCard({ hovered: true, index: index }) }} onMouseLeave={() => {
-                            setHoveredCard({ hovered: false, index: null });
-                            document.body.style.pointerEvents = 'none';
-
-                            setTimeout(() => {
-                                document.body.style.pointerEvents = 'auto';
-                            }, 300);
-
-                        }} className={`${(hoveredCard.hovered && hoveredCard.index !== index) ? "porjectItemHidden" : "projectItem"}`}><Project cardSizeMultiplier={0.6} key={index} title={element.title} description={element.description} githubLink={element.githubLink} index={index} language={element.language} hoveredSizeMultiplier={2} hovered={hoveredCard} /></div>
+                      
+                        return  <div className="mainProjectItemContainer">
+                            <div key={index} onMouseEnter={() => { setHoveredCard({ hovered: true, index: index }) }}
+                            onMouseLeave={() => { setHoveredCard({ hovered: false, index: null }); }}
+                            className={`${(hoveredCard.hovered && hoveredCard.index !== index) ? "projectItemHidden" : "projectItem"}`}
+                            style={{
+                                zIndex: hoveredCard.hovered ? 100 : 1,
+                                transform: (hoveredCard.hovered && hoveredCard.index === index) ? 'scale(1.8)' : 'scale(1)',
+                               
+                            }}>
+                            <div>
+                                <Project cardSizeMultiplier={0.6} title={element.title} description={element.description} githubLink={element.githubLink} index={index} language={element.language} hoveredSizeMultiplier={2} hovered={hoveredCard} />
+                            </div>
+                        </div>
+                    </div>
                     })}
                 </div>
             </div>
