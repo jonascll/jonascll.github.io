@@ -29,8 +29,7 @@
 
 
 .projectItem {
-    flex: 0 0 280px;
-
+    flex: 0 0 350px;
     display: block;
     border: 2px solid rgb(207, 241, 241);
     border-radius: 20px;
@@ -40,15 +39,15 @@
     line-height: normal;
     transform-origin: center center;
     margin: 15px;
-
-    max-width: 280px;
+    max-width: 350px;
     min-height: 400px;
     padding-bottom: 30px;
-    
     position: 'relative';
 
 }
-
+.projectItem:hover{
+    background-color: #363640;
+}
 
 
 .projectItemHidden {
@@ -83,8 +82,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    width: 280px;
+    
+    width: 350px;
     height: 450px;
     box-sizing: border-box;
     position: relative;

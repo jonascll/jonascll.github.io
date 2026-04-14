@@ -12,9 +12,9 @@ import jsColored from "../../Resources/js-colored.png"
 import unityColored from "../../Resources/unity-colored.png"
 import unrealColored from "../../Resources/unreal-colored.png"
 
-function Project({ title, description, githubLink, index = null, language = null, cardSizeMultiplier = 1 ,hovered= false, hoveredSizeMultiplier = 3}) {
+function Project({ title, description, githubLink, index = null, language = null, cardSizeMultiplier = 1 ,hovered= false, hoveredSizeMultiplier = 3, imageType=".png"}) {
 
-    const imageSrc = new URL(`../../Resources/${title}.gif`, import.meta.url)
+    const imageSrc = new URL(`../../Resources/${title.replace(/\s/g, "")}${imageType}`, import.meta.url)
    
     if(hovered.hovered) {
         if(hovered.index === index) {
@@ -27,19 +27,19 @@ function Project({ title, description, githubLink, index = null, language = null
         if (language !== null) {
             switch (language.toLowerCase()) {
                 case "unity":
-                    return (<div className="projectIconContainer"><Icon width={150 * cardSizeMultiplier} height={150 * cardSizeMultiplier} alt="Unity" source={unity} originalColorSource={unityColored} originalColorOnHover={true} color={"#363640"}></Icon></div>)
+                    return (<div className="projectIconContainer"><Icon width={150 * cardSizeMultiplier} height={150 * cardSizeMultiplier} alt="Unity" source={unity} originalColorSource={unityColored} originalColorOnHover={true} color={`${hovered.hovered ? "rgb(106, 126, 126)" : "#363640"}`}></Icon></div>)
 
                 case "unreal":
-                    return (<div className="projectIconContainer"><Icon width={150 * cardSizeMultiplier} height={150 * cardSizeMultiplier} alt="Unreal Engine" source={unreal} originalColorSource={unrealColored} originalColorOnHover={true} color={"#363640"}></Icon></div>)
+                    return (<div className="projectIconContainer"><Icon width={150 * cardSizeMultiplier} height={150 * cardSizeMultiplier} alt="Unreal Engine" source={unreal} originalColorSource={unrealColored} originalColorOnHover={true} color={`${hovered.hovered ? "rgb(106, 126, 126)" : "#363640"}`}></Icon></div>)
 
                 case "cpp":
-                    return (<div className="projectIconContainer"><Icon width={150 * cardSizeMultiplier} height={150 * cardSizeMultiplier} alt="Cpp" source={cpp} originalColorSource={cppColored} originalColorOnHover={true} color={"#363640"}></Icon></div>)
+                    return (<div className="projectIconContainer"><Icon width={150 * cardSizeMultiplier} height={150 * cardSizeMultiplier} alt="Cpp" source={cpp} originalColorSource={cppColored} originalColorOnHover={true} color={`${hovered.hovered ? "rgb(106, 126, 126)" : "#363640"}`}></Icon></div>)
 
                 case "c#":
-                    return (<div className="projectIconContainer"><Icon width={150 * cardSizeMultiplier} height={150 * cardSizeMultiplier} alt="C#" source={cs} originalColorSource={csColored} originalColorOnHover={true} color={"#363640"}></Icon></div>)
+                    return (<div className="projectIconContainer"><Icon width={150 * cardSizeMultiplier} height={150 * cardSizeMultiplier} alt="C#" source={cs} originalColorSource={csColored} originalColorOnHover={true} color={`${hovered.hovered ? "rgb(106, 126, 126)" : "#363640"}`}></Icon></div>)
 
                 case "js":
-                    return (<div className="projectIconContainer"><Icon width={150 * cardSizeMultiplier} height={150 * cardSizeMultiplier} alt="JavaScript" source={js} originalColorSource={jsColored} originalColorOnHover={true} color={"#363640"}></Icon></div>)
+                    return (<div className="projectIconContainer"><Icon width={150 * cardSizeMultiplier} height={150 * cardSizeMultiplier} alt="JavaScript" source={js} originalColorSource={jsColored} originalColorOnHover={true} color={`${hovered.hovered ? "rgb(106, 126, 126)" : "#363640"}`}></Icon></div>)
 
                 default:
                     return null;
