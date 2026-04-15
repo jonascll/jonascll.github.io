@@ -13,7 +13,7 @@ function Projects() {
     useEffect(() => {
         setProjects(data.projects)
     }, [])
-    const hoveredMultiplier = 2;
+    const hoveredMultiplier = 1.8;
     return (
         <div className="projectsMain">
             <div className="projectsPage">
