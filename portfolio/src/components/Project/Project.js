@@ -12,11 +12,11 @@ import jsColored from "../../Resources/js-colored.png"
 import unityColored from "../../Resources/unity-colored.png"
 import unrealColored from "../../Resources/unreal-colored.png"
 
-function Project({ title, description, githubLink, index = null, language = null, cardSizeMultiplier = 1 ,hovered= false, imageType=".png"}) {
+function Project({ title, description, githubLink, index = null, language = null, cardSizeMultiplier = 1, hovered = false, imageType = ".png" }) {
 
     const imageSrc = new URL(`../../Resources/${title.replace(/\s/g, "")}${imageType}`, import.meta.url)
-   
-    
+
+
     const handleLanguageIcon = () => {
 
         if (language !== null) {
@@ -43,11 +43,14 @@ function Project({ title, description, githubLink, index = null, language = null
     }
 
     if (index !== null) {
-        return (<div className={`${index === 0 ? "projectContainerFirst" : "projectContainer"} projectMainContainer ${(hovered.hovered && hovered.index !== index) ? "projectHidden": ""}`}>
+        return (<div className={`${index === 0 ? "projectContainerFirst" : "projectContainer"} projectMainContainer ${(hovered.hovered && hovered.index !== index) ? "projectHidden" : ""}`}>
 
             <span className="projectName">{title}</span>
             <span className="projectDescription">{description}</span>
-            <Picture keepAspectRatio={true} height={250 * cardSizeMultiplier} source={imageSrc} alt={"projectDemo"} onClick={() => { window.open(githubLink) }} />
+            <div className="projectPictureContainer">
+                <Picture keepAspectRatio={true} height={250 * cardSizeMultiplier} source={imageSrc} alt={"projectDemo"} onClick={() => { window.open(githubLink) }} />
+            </div>
+
             {handleLanguageIcon()}
 
         </div>)
@@ -56,7 +59,9 @@ function Project({ title, description, githubLink, index = null, language = null
 
             <span className="projectName">{title}</span>
             <span className="projectDescription">{description}</span>
-            <Picture keepAspectRatio={true} height={250 * cardSizeMultiplier} source={imageSrc} alt={"projectDemo"} onClick={() => { window.open(githubLink) }} />
+            <div className="projectPictureContainer">
+                <Picture keepAspectRatio={true} height={250 * cardSizeMultiplier} source={imageSrc} alt={"projectDemo"} onClick={() => { window.open(githubLink) }} />
+            </div>
             {handleLanguageIcon()}
         </div>)
     }

@@ -36,3 +36,7 @@
 .projectHidden{
     opacity: 0.2;
 }
+
+.projectPictureContainer{
+    object-fit: contain;
+}
