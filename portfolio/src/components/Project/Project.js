@@ -12,16 +12,11 @@ import jsColored from "../../Resources/js-colored.png"
 import unityColored from "../../Resources/unity-colored.png"
 import unrealColored from "../../Resources/unreal-colored.png"
 
-function Project({ title, description, githubLink, index = null, language = null, cardSizeMultiplier = 1 ,hovered= false, hoveredSizeMultiplier = 3, imageType=".png"}) {
+function Project({ title, description, githubLink, index = null, language = null, cardSizeMultiplier = 1 ,hovered= false, imageType=".png"}) {
 
     const imageSrc = new URL(`../../Resources/${title.replace(/\s/g, "")}${imageType}`, import.meta.url)
    
-    if(hovered.hovered) {
-        if(hovered.index === index) {
-           // cardSizeMultiplier = hoveredSizeMultiplier
-        } 
-        
-    }
+    
     const handleLanguageIcon = () => {
 
         if (language !== null) {

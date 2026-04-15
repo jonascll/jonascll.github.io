@@ -30,7 +30,8 @@
 
 .projectItem {
     flex: 0 0 350px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     border: 2px solid rgb(207, 241, 241);
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -39,6 +40,7 @@
     line-height: normal;
     transform-origin: center center;
     margin: 15px;
+    min-width: 300px;
     max-width: 350px;
     min-height: 400px;
     padding-bottom: 30px;

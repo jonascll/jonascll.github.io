@@ -13,7 +13,7 @@ function Projects() {
     useEffect(() => {
         setProjects(data.projects)
     }, [])
-
+    const hoveredMultiplier = 2;
     return (
         <div className="projectsMain">
             <div className="projectsPage">
@@ -29,11 +29,11 @@ function Projects() {
                             className={`${(hoveredCard.hovered && hoveredCard.index !== index) ? "projectItemHidden" : "projectItem"}`}
                             style={{
                                 zIndex: hoveredCard.hovered ? 100 : 1,
-                                transform: (hoveredCard.hovered && hoveredCard.index === index) ? 'scale(1.8)' : 'scale(1)',
+                                transform: (hoveredCard.hovered && hoveredCard.index === index) ? `scale(${hoveredMultiplier})` : 'scale(1)',
                                 
                             }}>
                             <div>
-                                <Project imageType={element.imageType} cardSizeMultiplier={0.6} title={element.title} description={element.description} githubLink={element.githubLink} index={index} language={element.language} hoveredSizeMultiplier={2} hovered={hoveredCard} />
+                                <Project imageType={element.imageType} cardSizeMultiplier={0.5} title={element.title} description={element.description} githubLink={element.githubLink} index={index} language={element.language} hovered={hoveredCard} />
                             </div>
                         </div>
                     </div>
