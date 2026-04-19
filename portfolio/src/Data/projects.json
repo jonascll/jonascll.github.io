@@ -1,8 +1,46 @@
-{ "projects": [
-    {"title" : "Formations", "description": "Research project into using Unity's AI to make formations", "githubLink" : "https://github.com/jonascll/GPPFormationsAI/tree/main", "language": "Unity", "imageType" : ".gif" },
-     {"title" : "Unity2d research", "description": "Research into unity2d's tilemaps and sheets", "githubLink" : "https://github.com/jonascll/RunDodge", "language": "Unity", "imageType" : ".gif" },
-    {"title" : "Todo list", "description": "Simple Todo application for home use in electronjs", "githubLink" : "https://github.com/jonascll/TodoList", "language": "js", "imageType" : ".png" },
-    {"title" : "Generated planet", "description": "Research into procedurally generating worlds", "githubLink" : "https://github.com/jonascll/Procedural-gen-Experimentation", "language": "Unity", "imageType" : ".gif" },
-    {"title" : "This website", "description": "Portfolio website made with React", "githubLink" : "https://github.com/jonascll/jonascll.github.io", "language": "js", "imageType" : ".png" }
-  
-]}
+{
+    "projects": [
+        {
+            "title": "Formations",
+            "description": "Research project into using Unity's AI to make formations",
+            "githubLink": "https://github.com/jonascll/GPPFormationsAI/tree/main",
+            "language": "Unity",
+            "imageType": ".gif"
+        },
+        {
+            "title": "Unity2d research",
+            "description": "Research into unity2d's tilemaps and sheets",
+            "githubLink": "https://github.com/jonascll/RunDodge",
+            "language": "Unity",
+            "imageType": ".gif"
+        },
+        {
+            "title": "Todo list",
+            "description": "Simple Todo application for home use in electronjs",
+            "githubLink": "https://github.com/jonascll/TodoList",
+            "language": "js",
+            "imageType": ".png"
+        },
+        {
+            "title": "Generated planet",
+            "description": "Research into procedurally generating worlds",
+            "githubLink": "https://github.com/jonascll/Procedural-gen-Experimentation",
+            "language": "Unity",
+            "imageType": ".gif"
+        },
+        {
+            "title": "Achievement Hunter",
+            "description": "Achievement tracker written in c# avalonia",
+            "githubLink": "https://github.com/jonascll/Achievement-Hunter",
+            "language": "c#",
+            "imageType": ".png"
+        },
+        {
+            "title": "This website",
+            "description": "Portfolio website made with React",
+            "githubLink": "https://github.com/jonascll/jonascll.github.io",
+            "language": "js",
+            "imageType": ".png"
+        }
+    ]
+}
