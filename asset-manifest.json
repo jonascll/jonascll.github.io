@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c448c2c2.css",
-    "main.js": "/static/js/main.fc53cb46.js",
+    "main.js": "/static/js/main.453b941d.js",
     "static/js/453.635f5f07.chunk.js": "/static/js/453.635f5f07.chunk.js",
     "static/media/Generatedplanet.gif": "/static/media/Generatedplanet.b992cee674606983baae.gif",
     "static/media/Unity2dresearch.gif": "/static/media/Unity2dresearch.e091f2c2f96a757fa7f8.gif",
@@ -16,6 +16,7 @@
     "static/media/instagram-colored.png": "/static/media/instagram-colored.f7b3dff34fba7bf43d83.png",
     "static/media/CV Jonas Collin.pdf": "/static/media/CV Jonas Collin.8408c848d412e1c11887.pdf",
     "static/media/cpp.png": "/static/media/cpp.28f3d4e7ef95a6735a7d.png",
+    "static/media/AchievementHunter.png": "/static/media/AchievementHunter.f4b64262c242f99b6680.png",
     "static/media/cs-colored.png": "/static/media/cs-colored.9bce78737e170b4b7cdf.png",
     "static/media/gmail.png": "/static/media/gmail.0dedbd5476dc24ea43ac.png",
     "static/media/cs.png": "/static/media/cs.a0523c86975d676834bc.png",
@@ -26,11 +27,11 @@
     "static/media/linkedIn.png": "/static/media/linkedIn.032cf8a63be2f0f4d425.png",
     "index.html": "/index.html",
     "main.c448c2c2.css.map": "/static/css/main.c448c2c2.css.map",
-    "main.fc53cb46.js.map": "/static/js/main.fc53cb46.js.map",
+    "main.453b941d.js.map": "/static/js/main.453b941d.js.map",
     "453.635f5f07.chunk.js.map": "/static/js/453.635f5f07.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c448c2c2.css",
-    "static/js/main.fc53cb46.js"
+    "static/js/main.453b941d.js"
   ]
 }
